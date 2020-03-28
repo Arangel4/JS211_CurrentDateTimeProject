@@ -9,17 +9,16 @@ console.log(new Date)
 
 const displayDate = () => {
   const currentDate = new Date()
-
+  
   document.getElementById("display-element").innerHTML = currentDate;
 }
- 
 
 // Write a JavaScript program to convert a number to a string.
-
-
+const num = 13;
+num.toString();
 
 // Write a JavaScript program to convert a string to the number.
-
+Number(num);
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,21 +29,82 @@ const displayDate = () => {
   // * NaN
   // * String
   
+const theString = "Hello World";
+const theInt = 23;
+const theBool = false;
+const theNull = null;
+const theUnknown = NaN;
+const theEmpty = undefined;
+
+
+const checkingFunc = (variable) => {
+  return typeof(variable);
+}
+
+console.log(checkingFunc(theEmpty));
 
   
 // Write a JavaScript program that adds 2 numbers together.
+const addTwoNums = (numOne, numTwo) => {
+  return (numOne + numTwo);
+}
 
+console.log(addTwoNums(7, 3));
 
 
 // Write a JavaScript program that runs only when 2 things are true.
+const varOne = 4;
+const varTwo = "4";
+const varThree = "4";
+const varFour = 4;
 
+const boolFunc = (varOne, varTwo, varThree, varFour) =>
+{
+  if (varOne === varFour && varTwo === varThree) {
+  return "Good Job"
+  } else {
+  return "Bad Job"
+  }
+}
+
+console.log(boolFunc(varOne, varTwo, varThree, varFour));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const varOne = 4;
+const varTwo = "4";
+const varThree = "4";
+const varFour = 9;
 
+const boolFunc = (varOne, varTwo, varThree, varFour) =>
+{
+  if (varOne === varFour || varTwo === varThree) {
+  return "Good Job"
+  } else {
+  return "Bad Job"
+  }
+}
+
+console.log(boolFunc(varOne, varTwo, varThree, varFour));
 
 
 // Write a JavaScript program that runs when both things are not true.  
+const varOne = 4;
+const varTwo = "4";
+const varThree = "0";
+const varFour = 9;
+
+const boolFunc = (varOne, varTwo, varThree, varFour) =>
+{
+  if (varOne !== varFour && varTwo !== varThree) {
+  return "Good Job"
+  } else {
+  return "Bad Job"
+  }
+}
+
+console.log(boolFunc(varOne, varTwo, varThree, varFour));
+
 
 // ***************************
 //         PART TWO
