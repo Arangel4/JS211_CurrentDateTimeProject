@@ -72,30 +72,29 @@ const orVarOne = 9;
 const orVarTwo = 44;
 const orVarThree = 9;
 
-const boolFunc = (orVarOne, orVarTwo, orVarThree) =>
+const orFunc = (orVarOne, orVarTwo, orVarThree) =>
 {
   if (orVarOne === orVarThree || orVarTwo === orVarThree) {
-  return "Good Job"
-  } else {
-  return "Bad Job"
+  return true
   }
 };
 
-console.log(boolFunc(varOne, varTwo, varThree));
+console.log(orFunc(orVarOne, orVarTwo, orVarThree));
 
 
 // Write a JavaScript program that runs when both things are not true.  
 const wrongVarOne = 0;
 const wrongVarTwo = "9";
-const wrongVarThree = null;
+const wrongVarThree = 6;
 
-const boolFunc = (wrongVarOne, wrongVarTwo, wrongVarThree) =>
-{
+const notFunc = (wrongVarOne, wrongVarTwo, wrongVarThree) => {
   if (wrongVarOne !== wrongVarTwo && wrongVarTwo !== wrongVarThree) {
   return true
-  };
+  }
+};
 
-console.log(boolFunc(varOne, varTwo, varThree));
+console.log(notFunc(wrongVarOne, wrongVarTwo, wrongVarThree));
+
 
 
 // ***************************
