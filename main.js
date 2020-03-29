@@ -11,7 +11,7 @@ const displayDate = () => {
   const currentDate = new Date()
   
   document.getElementById("display-element").innerHTML = currentDate;
-}
+};
 
 // Write a JavaScript program to convert a number to a string.
 const num = 13;
@@ -39,7 +39,7 @@ const theEmpty = undefined;
 
 const checkingFunc = (variable) => {
   return typeof(variable);
-}
+};
 
 console.log(checkingFunc(theEmpty));
 
@@ -47,63 +47,55 @@ console.log(checkingFunc(theEmpty));
 // Write a JavaScript program that adds 2 numbers together.
 const addTwoNums = (numOne, numTwo) => {
   return (numOne + numTwo);
-}
+};
 
 console.log(addTwoNums(7, 3));
 
 
 // Write a JavaScript program that runs only when 2 things are true.
 const varOne = 4;
-const varTwo = "4";
-const varThree = "4";
-const varFour = 4;
+const varTwo = 4;
+const varThree = 10;
 
-const boolFunc = (varOne, varTwo, varThree, varFour) =>
+const boolFunc = (varOne, varTwo, varThree) =>
 {
-  if (varOne === varFour && varTwo === varThree) {
-  return "Good Job"
-  } else {
-  return "Bad Job"
+  if (varOne === varTwo && varTwo < varThree) {
+  return true
   }
-}
+};
 
-console.log(boolFunc(varOne, varTwo, varThree, varFour));
+console.log(boolFunc(varOne, varTwo, varThree));
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
-const varOne = 4;
-const varTwo = "4";
-const varThree = "4";
-const varFour = 9;
+const orVarOne = 9;
+const orVarTwo = 44;
+const orVarThree = 9;
 
-const boolFunc = (varOne, varTwo, varThree, varFour) =>
+const boolFunc = (orVarOne, orVarTwo, orVarThree) =>
 {
-  if (varOne === varFour || varTwo === varThree) {
+  if (orVarOne === orVarThree || orVarTwo === orVarThree) {
   return "Good Job"
   } else {
   return "Bad Job"
   }
-}
+};
 
-console.log(boolFunc(varOne, varTwo, varThree, varFour));
+console.log(boolFunc(varOne, varTwo, varThree));
 
 
 // Write a JavaScript program that runs when both things are not true.  
-const varOne = 4;
-const varTwo = "4";
-const varThree = "0";
-const varFour = 9;
+const wrongVarOne = 0;
+const wrongVarTwo = "9";
+const wrongVarThree = null;
 
-const boolFunc = (varOne, varTwo, varThree, varFour) =>
+const boolFunc = (wrongVarOne, wrongVarTwo, wrongVarThree) =>
 {
-  if (varOne !== varFour && varTwo !== varThree) {
-  return "Good Job"
-  } else {
-  return "Bad Job"
-  }
-}
+  if (wrongVarOne !== wrongVarTwo && wrongVarTwo !== wrongVarThree) {
+  return true
+  };
 
-console.log(boolFunc(varOne, varTwo, varThree, varFour));
+console.log(boolFunc(varOne, varTwo, varThree));
 
 
 // ***************************
@@ -118,10 +110,3 @@ console.log(boolFunc(varOne, varTwo, varThree, varFour));
 // 6. go to `index.html` 
 // 7. create inputs, buttons and event listeners that render the code blocks you built above to the DOM.
 
-
-
-
-// Additional Resources
-// Video1: https://player.vimeo.com/video/377147232
-// Video2: https://www.youtube.com/embed/bkvH28PXLWc
-// Video3: https://www.youtube.com/embed/TrGI9Yki-24
