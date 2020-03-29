@@ -15,10 +15,26 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 const num = 13;
-num.toString();
+
+const convertToString = () => {
+  num.toString()
+  
+  document.getElementById("display-elementTwo").innerHTML = num;
+};
+
+
+
+
 
 // Write a JavaScript program to convert a string to the number.
-Number(num);
+const value = "6";
+
+const convertToInt = () => {
+  Number(value);
+
+  document.getElementById("display-elementThree").innerHTML = value;
+}
+
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -36,20 +52,24 @@ const theNull = null;
 const theUnknown = NaN;
 const theEmpty = undefined;
 
+console.log(theBool);
 
-const checkingFunc = (variable) => {
-  return typeof(variable);
+const checkingFunc = () => {
+  typeof(theBool);
+  document.getElementById("display-elementFour").innerHTML = typeof(theBool);
 };
 
-console.log(checkingFunc(theEmpty));
+
 
   
 // Write a JavaScript program that adds 2 numbers together.
-const addTwoNums = (numOne, numTwo) => {
-  return (numOne + numTwo);
+const addTwoNums = () => {
+  const sum = (9 + 5);
+
+  document.getElementById("display-elementFive").innerHTML = sum;
 };
 
-console.log(addTwoNums(7, 3));
+
 
 
 // Write a JavaScript program that runs only when 2 things are true.
