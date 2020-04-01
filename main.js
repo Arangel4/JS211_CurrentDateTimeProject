@@ -71,20 +71,21 @@ const addTwoNums = () => {
 
 
 
-
 // Write a JavaScript program that runs only when 2 things are true.
 const varOne = 4;
 const varTwo = 4;
 const varThree = 10;
 
-const boolFunc = (varOne, varTwo, varThree) =>
+const boolFunc = () =>
 {
   if (varOne === varTwo && varTwo < varThree) {
-  return true
+    console.log(true)
+    document.getElementById("display-elementSix").innerHTML = true;
   }
 };
 
-console.log(boolFunc(varOne, varTwo, varThree));
+
+
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
@@ -92,14 +93,17 @@ const orVarOne = 9;
 const orVarTwo = 44;
 const orVarThree = 9;
 
-const orFunc = (orVarOne, orVarTwo, orVarThree) =>
+const orFunc = () =>
 {
   if (orVarOne === orVarThree || orVarTwo === orVarThree) {
-  return true
+  console.log(true)
+  document.getElementById("display-elementSeven").innerHTML = true;
   }
 };
 
-console.log(orFunc(orVarOne, orVarTwo, orVarThree));
+
+
+
 
 
 // Write a JavaScript program that runs when both things are not true.  
@@ -107,13 +111,12 @@ const wrongVarOne = 0;
 const wrongVarTwo = "9";
 const wrongVarThree = 6;
 
-const notFunc = (wrongVarOne, wrongVarTwo, wrongVarThree) => {
+const notFunc = () => {
   if (wrongVarOne !== wrongVarTwo && wrongVarTwo !== wrongVarThree) {
-  return true
+    console.log(true)
+    document.getElementById("display-elementEight").innerHTML = true;
   }
 };
-
-console.log(notFunc(wrongVarOne, wrongVarTwo, wrongVarThree));
 
 
 
